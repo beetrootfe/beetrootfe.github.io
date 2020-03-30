@@ -1,1 +1,395 @@
-/* No CSS */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+body {
+  position: relative;
+  margin: 0;
+}
+
+.cookies {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 72px;
+  background-color: #194277;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 370px) {
+  .cookies {
+    padding: 0px 20px;
+  }
+}
+
+.cookies p {
+  font-size: 14px;
+  color: white;
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 370px) {
+  .cookies p {
+    padding: 0px 0px;
+    max-width: 40%;
+  }
+}
+
+.cookies button.accept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 109px;
+  height: 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 13px;
+  background-color: #ffffff;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #3695ff;
+}
+
+@media only screen and (max-width: 370px) {
+  .cookies button.accept {
+    width: auto;
+  }
+}
+
+header {
+  font-size: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/group1/img/Prostokąt.png);
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+header .context {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1150px;
+  padding-top: 175px;
+  padding-bottom: 148px;
+}
+
+header .context .circle {
+  width: 181px;
+  height: 181px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .context .circle .c1 {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .context .circle .c1 .c2 {
+  width: 141px;
+  height: 141px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+header .context h1.title {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 1.25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context h1.title {
+    font-size: 30px;
+  }
+}
+
+header .context .subtitle {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.19;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 40px;
+}
+
+header .context .hire_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 204px;
+  height: 55px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 27.5px;
+  background-color: #ffffff;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #3695ff;
+}
+
+header .context .menu {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 8%;
+}
+
+header .context .menu .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .context .menu .overlay-content {
+  border-radius: 15px;
+  max-width: 1150px;
+  padding-top: 3%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+
+header .context .menu .overlay-content .social_media {
+  border-top: 2px solid #a0a0a7;
+  margin: 0 auto;
+  width: 20%;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context .menu .overlay-content .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .context .menu .overlay-content .social_media .sm {
+  border-radius: 50%;
+  display: inline;
+  background-color: #a0a0a7;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-facebook:before {
+  content: "\ea90";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-instagram:before {
+  content: "\ea92";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-whatsapp:before {
+  content: "\ea93";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-twitter:before {
+  content: "\ea96";
+}
+
+header .context .menu .overlay-content .social_media .sm:hover {
+  background-color: #3695ff;
+}
+
+header .context .menu .overlay a.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a0a0a7;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context .menu .overlay a.lang {
+    position: relative;
+  }
+}
+
+header .context .menu .overlay a.lang img {
+  width: 45px;
+  height: 25px;
+}
+
+header .context .menu .overlay a {
+  font-family: "Lato", sans-serif;
+  padding: 18px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 36px;
+  color: #d2d2d2;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+}
+
+header .context .menu .overlay a:hover,
+header .context .menu .overlay a:focus {
+  color: #3677fd;
+}
+
+header .context .menu .overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  header .context .menu .overlay {
+    overflow-y: auto;
+  }
+  header .context .menu .overlay a {
+    font-size: 20px;
+  }
+  header .context .menu .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
