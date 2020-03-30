@@ -324,6 +324,28 @@ header .context .menu .overlay-content .social_media {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  header .context .menu .overlay-content .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 header .context .menu .overlay-content .social_media .sm {
   border-radius: 50%;
   display: inline;
