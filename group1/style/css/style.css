@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
-header .cookies {
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+body {
+  position: relative;
+  margin: 0;
+}
+
+.cookies {
   position: fixed;
   top: 0;
   display: -webkit-box;
@@ -10,6 +16,8 @@ header .cookies {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -17,17 +25,31 @@ header .cookies {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #112f92;
+  height: 72px;
+  background-color: #194277;
   z-index: 2;
 }
 
-header .cookies p {
-  font-size: 16px;
+@media only screen and (max-width: 370px) {
+  .cookies {
+    padding: 0px 20px;
+  }
+}
+
+.cookies p {
+  font-size: 14px;
   color: white;
   padding-right: 30px;
 }
 
-header .cookies button.accept {
+@media only screen and (max-width: 370px) {
+  .cookies p {
+    padding: 0px 0px;
+    max-width: 40%;
+  }
+}
+
+.cookies button.accept {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +70,7 @@ header .cookies button.accept {
   border-radius: 13px;
   background-color: #ffffff;
   font-family: Lato;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -56,7 +78,14 @@ header .cookies button.accept {
   color: #3695ff;
 }
 
+@media only screen and (max-width: 370px) {
+  .cookies button.accept {
+    width: auto;
+  }
+}
+
 header {
+  font-size: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,13 +130,32 @@ header .context {
 }
 
 header .context .circle {
-  -webkit-box-shadow: 10px 10px 10px 10px rgba(20, 84, 202, 0.6);
-          box-shadow: 10px 10px 10px 10px rgba(20, 84, 202, 0.6);
+  width: 181px;
+  height: 181px;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .context .circle .c1 {
+  width: 160px;
+  height: 160px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header .context .circle .c1 .c2 {
   width: 141px;
   height: 141px;
-  border: solid 3px #ffffff;
   background-color: #ffffff;
+  border-radius: 50%;
 }
 
 header .context h1.title {
@@ -121,6 +169,12 @@ header .context h1.title {
   letter-spacing: 1.25px;
   text-align: center;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context h1.title {
+    font-size: 30px;
+  }
 }
 
 header .context .subtitle {
@@ -168,8 +222,8 @@ header .context .hire_button {
 header .context .menu {
   color: white;
   position: absolute;
-  right: 0;
-  top: 40px;
+  right: 20px;
+  top: 8%;
 }
 
 header .context .menu .overlay {
@@ -186,39 +240,143 @@ header .context .menu .overlay {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .context .menu .overlay-content {
-  width: 400px;
-  height: 400px;
+  border-radius: 15px;
+  max-width: 1150px;
+  padding-top: 3%;
+  width: 100%;
   background-color: white;
   position: relative;
-  top: 25%;
   text-align: center;
   margin-top: 30px;
 }
 
+header .context .menu .overlay-content .social_media {
+  border-top: 2px solid #a0a0a7;
+  margin: 0 auto;
+  width: 20%;
+  padding: 5%;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context .menu .overlay-content .social_media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header .context .menu .overlay-content .social_media .sm {
+  border-radius: 50%;
+  display: inline;
+  background-color: #a0a0a7;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-facebook:before {
+  content: "\ea90";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-instagram:before {
+  content: "\ea92";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-whatsapp:before {
+  content: "\ea93";
+}
+
+header .context .menu .overlay-content .social_media .sm .icon-twitter:before {
+  content: "\ea96";
+}
+
+header .context .menu .overlay-content .social_media .sm:hover {
+  background-color: #3695ff;
+}
+
+header .context .menu .overlay a.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #a0a0a7;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 570px) {
+  header .context .menu .overlay a.lang {
+    position: relative;
+  }
+}
+
+header .context .menu .overlay a.lang img {
+  width: 45px;
+  height: 25px;
+}
+
 header .context .menu .overlay a {
-  padding: 8px;
+  font-family: "Lato", sans-serif;
+  padding: 18px;
   text-decoration: none;
   text-transform: capitalize;
   font-size: 36px;
-  color: #818181;
+  color: #d2d2d2;
   display: block;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
 }
 
 header .context .menu .overlay a:hover,
 header .context .menu .overlay a:focus {
-  color: #f1f1f1;
+  color: #3677fd;
 }
 
 header .context .menu .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 0px;
+  right: 5px;
   font-size: 60px;
 }
 

@@ -1,47 +1,62 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
-header {
-    & .cookies {
-        position: fixed;
-        top: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-       height: 72px;
-       background-color: #194277;
-        z-index: 2;
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+body {
+    position: relative;
+    margin: 0;
+}
+.cookies {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 72px;
+    background-color: #194277;
+    z-index: 2;
+    @media only screen and (max-width: 370px) {
+        padding: 0px 20px;
+    }
 
-        & p {
-            font-size: 14px;
-            color: white;
-            padding-right: 30px;
+    & p {
+        font-size: 14px;
+        color: white;
+        padding-right: 30px;
+        @media only screen and (max-width: 370px) {
+            padding: 0px 0px;
+            max-width: 40%;
         }
-        & button {
-            &.accept {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                width: 110px;
-                height: 30px;
-                text-decoration: none;
-                text-transform: capitalize;
-                border-radius: 13px;
-                background-color: #ffffff;
-                font-family: Lato;
-                font-size: 12px;
-                font-weight: bold;
-                font-stretch: normal;
-                font-style: normal;
-                text-align: center;
-                color: #3695ff;
+    }
+    & button {
+        &.accept {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+            height: 30px;
+            text-decoration: none;
+            text-transform: capitalize;
+            border-radius: 13px;
+            background-color: #ffffff;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            text-align: center;
+            color: #3695ff;
+            @media only screen and (max-width: 370px) {
+                width: auto;
             }
         }
     }
 }
 
 header {
+    font-size: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,15 +80,27 @@ header {
         padding-top: 175px;
         padding-bottom: 148px;
         & .circle {
-            box-shadow: 10px 10px 10px 10px rgba(20, 84, 202, 0.6);
-            // -moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
-            // -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
-            // -o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+            width: 181px;
+            height: 181px;
             border-radius: 50%;
-            width: 141px;
-            height: 141px;
-            border: solid 3px #ffffff;
-            background-color: #ffffff;
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            & .c1 {
+                width: 160px;
+                height: 160px;
+                background-color: rgba($color: #ffffff, $alpha: 0.3);
+                & .c2 {
+                    width: 141px;
+                    height: 141px;
+
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                }
+            }
         }
         & h1 {
             &.title {
@@ -87,6 +114,9 @@ header {
                 letter-spacing: 1.25px;
                 text-align: center;
                 color: #ffffff;
+                @media only screen and (max-width: 570px) {
+                    font-size: 30px;
+                }
             }
         }
         & .subtitle {
@@ -123,10 +153,8 @@ header {
         .menu {
             color: white;
             position: absolute;
-            right: 0;
-            top: 40px;
-
-           
+            right: 20px;
+            top: 8%;
 
             .overlay {
                 height: 0%;
@@ -140,41 +168,102 @@ header {
                 background-color: rgba(0, 0, 0, 0.9);
                 overflow-y: hidden;
                 transition: 0.5s;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             .overlay-content {
-                width: 1150px;
-                height: 700px;
+                border-radius: 15px;
+                max-width: 1150px;
+                padding-top: 3%;
+                width: 100%;
                 background-color: white;
                 position: relative;
-                top: 25%;
-              
                 text-align: center;
+
                 margin-top: 30px;
+                & .social_media {
+                    border-top: 2px solid rgb(160, 160, 167);
+                    margin: 0 auto;
+                    width: 20%;
+                    padding: 5%;
+                    @media only screen and (max-width: 570px) {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    & .sm {
+                        border-radius: 50%;
+                        display: inline;
+                        background-color: rgb(160, 160, 167);
+                        padding: 10px;
+                        margin: 5px;
+                        font-size: 20px;
+
+                        & .icon-facebook:before {
+                            content: "\ea90";
+                        }
+                        & .icon-instagram:before {
+                            content: "\ea92";
+                        }
+                        & .icon-whatsapp:before {
+                            content: "\ea93";
+                        }
+                        & .icon-twitter:before {
+                            content: "\ea96";
+                        }
+                        &:hover {
+                            background-color: #3695ff;
+                        }
+                    }
+                }
+            }
+            .overlay a.lang {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: rgb(160, 160, 167);
+                font-size: 16px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                @media only screen and (max-width: 570px) {
+                    position: relative;
+                }
+                & img {
+                    width: 45px;
+                    height: 25px;
+                }
             }
 
             .overlay a {
-                padding: 8px;
+                font-family: "Lato", sans-serif;
+                padding: 18px;
                 text-decoration: none;
                 text-transform: capitalize;
                 font-size: 36px;
-                color: #818181;
+                color: #d2d2d2;
                 display: block;
                 transition: 0.3s;
-                 font-weight: 200;
-            font-stretch: normal;
-            font-style: normal;
+                font-weight: 100;
+                font-stretch: normal;
+                font-style: normal;
             }
 
             .overlay a:hover,
             .overlay a:focus {
-                color: #f1f1f1;
+                color: #3677fd;
             }
 
             .overlay .closebtn {
                 position: absolute;
-                top: 20px;
-                right: 45px;
+                top: 0px;
+                right: 5px;
                 font-size: 60px;
             }
             @media screen and (max-height: 450px) {
