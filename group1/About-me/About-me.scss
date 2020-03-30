@@ -33,9 +33,7 @@
         @media screen and (max-width:370px) {
             height: 510px;
         }
-        @media screen and (max-width:351    px) {
-            height: 540px;
-        }
+        
         .about-me__title{
             
             text-align: center;
@@ -85,17 +83,17 @@
         background-color: #f1f8ff;
     }
     .Expert-in{
-        width: 1140px;
-        height: 1145px;
         margin: 0 auto;
         @media screen and (max-width:901px) {
-            
+            width: 900px;
          }
          @media screen and (max-width:481px) {
-             
+             width: 480px;
+             height: 2600px;
           }
           @media screen and (max-width:321px) {
-             
+             width: 319px;
+            
           }
 
         .Expert-in__title{
@@ -107,17 +105,15 @@
 
         .Expert-in__box1{
             padding-top: 60px;
-            width: 1140px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: flex-start;
 
             @media screen and (max-width:901px) {
-                
+            
              }
              @media screen and (max-width:481px) {
-                
                  display: flex;
                  flex-direction: column;
                  justify-content: center;
@@ -125,7 +121,6 @@
                  padding-left: 70px;
               }
               @media screen and (max-width:321px) {
-                 
                  display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -137,7 +132,7 @@
 
         .section1{
             padding: 20px;
-           
+            width: 360px;
             @media screen and (max-width:901px) {
                 padding: 5px;
              }
@@ -147,7 +142,7 @@
               }
               @media screen and (max-width:321px) {
                 padding: 5px;
-               
+                width: 320px;
               }
           
         }
@@ -216,16 +211,16 @@
 
     .Expert-in__box2{
         padding-top: 60px;
-        width: 1140px;
+        
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
         @media screen and (max-width:901px) {
-            width: 900px;
+            
          }
          @media screen and (max-width:481px) {
-             width: 480px;
+         
              display: flex;
              flex-direction: column;
              justify-content: center;
@@ -233,7 +228,6 @@
              padding-left: 70px;
           }
           @media screen and (max-width:321px) {
-             width: 321px;
              display: flex;
             flex-direction: column;
             justify-content: center;
