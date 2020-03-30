@@ -10,13 +10,25 @@
     }
     .box_latest-1 {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: row;
         padding-bottom: 54px;
-    }
-    .box_latest-2 {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
+        .works_padtop {
+            padding-bottom: 53px;
+        }
+        .works_padtop_1 {
+            @media screen and (max-width: 751px) {
+                padding-top: 53px;
+            }
+        }
+        @media screen and (max-width: 1114px) {
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width: 1112px) {
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
