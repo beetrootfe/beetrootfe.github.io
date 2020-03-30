@@ -1,18 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
-body {
-    position: relative;
-    margin: 0;
+@mixin text_1 {
+    font-family: "Lato", sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #ffffff;
 }
-.cookies {
-    position: fixed;
-    top: 0;
+@mixin flex_row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+.cookies {
+    @include flex_row();
     width: 100%;
+    position: fixed;
+    top: 0;
     height: 72px;
     background-color: #194277;
     z-index: 2;
@@ -31,22 +51,16 @@ body {
     }
     & button {
         &.accept {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include flex_column();
+            @include text_1();
             width: 109px;
             height: 30px;
             text-decoration: none;
             text-transform: capitalize;
             border-radius: 13px;
             background-color: #ffffff;
-            font-family: Lato;
             font-size: 12px;
             font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            text-align: center;
             color: #3695ff;
             @media only screen and (max-width: 370px) {
                 width: auto;
@@ -56,11 +70,8 @@ body {
 }
 
 header {
+    @include flex_column();
     font-size: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: url(/group1/img/Prostokąt.png);
     position: relative;
     width: 100%;
@@ -72,20 +83,25 @@ header {
 
     & .context {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex_column();
         max-width: 1150px;
         padding-top: 175px;
         padding-bottom: 148px;
+        & .icon-arrow-thin-down:before {
+            content: "\e900";
+            font-size: 30px;
+            font-weight: 100;
+            position: absolute;
+            bottom: 10px;
+            transform: translate(-50%, -50%);
+            color: rgba($color: #ffffff, $alpha: 0.2);
+        }
         & .circle {
             width: 181px;
             height: 181px;
             border-radius: 50%;
             background-color: rgba($color: #ffffff, $alpha: 0.1);
             display: flex;
-
             justify-content: center;
             align-items: center;
 
@@ -96,7 +112,6 @@ header {
                 & .c2 {
                     width: 141px;
                     height: 141px;
-
                     background-color: #ffffff;
                     border-radius: 50%;
                 }
@@ -104,50 +119,37 @@ header {
         }
         & h1 {
             &.title {
+                @include text_1();
                 text-transform: uppercase;
-                font-family: "Lato", sans-serif;
+
                 font-size: 50px;
                 font-weight: 900;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.2;
-                letter-spacing: 1.25px;
-                text-align: center;
-                color: #ffffff;
+
                 @media only screen and (max-width: 570px) {
                     font-size: 30px;
                 }
             }
         }
         & .subtitle {
-            font-family: Lato;
+            @include text_1();
             font-size: 16px;
             font-weight: 300;
-            font-stretch: normal;
-            font-style: normal;
             line-height: 2.19;
-            letter-spacing: 0.4px;
-            text-align: center;
-            color: #ffffff;
             padding-bottom: 40px;
         }
         & .hire_button {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include text_1();
+            @include flex_column();
             width: 204px;
             height: 55px;
             text-decoration: none;
             text-transform: uppercase;
             border-radius: 27.5px;
             background-color: #ffffff;
-            font-family: Lato;
+
             font-size: 16px;
             font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            text-align: center;
+
             color: #3695ff;
         }
         .menu {
@@ -168,10 +170,7 @@ header {
                 background-color: rgba(0, 0, 0, 0.9);
                 overflow-y: hidden;
                 transition: 0.5s;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex_column();
             }
 
             .overlay-content {
@@ -190,10 +189,8 @@ header {
                     width: 20%;
                     padding: 5%;
                     @media only screen and (max-width: 570px) {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: center;
-                        align-items: center;
+                        @include flex_row();
+                        flex-wrap: nowrap;
                     }
 
                     & .sm {
@@ -223,10 +220,7 @@ header {
                 }
             }
             .overlay a.lang {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
+                @include flex_row();
                 color: rgb(160, 160, 167);
                 font-size: 16px;
                 position: absolute;
@@ -242,7 +236,7 @@ header {
             }
 
             .overlay a {
-                font-family: "Lato", sans-serif;
+                @include text_1();
                 padding: 18px;
                 text-decoration: none;
                 text-transform: capitalize;
@@ -251,8 +245,6 @@ header {
                 display: block;
                 transition: 0.3s;
                 font-weight: 100;
-                font-stretch: normal;
-                font-style: normal;
             }
 
             .overlay a:hover,
