@@ -192,6 +192,10 @@ header {
                         @include flex_row();
                         flex-wrap: nowrap;
                     }
+                    @media only screen and (max-width: 1000px) {
+                        @include flex_row();
+                        flex-wrap: nowrap;
+                    }
 
                     & .sm {
                         border-radius: 50%;
