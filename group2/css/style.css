@@ -1,0 +1,162 @@
+#start {
+  font-family: "Lato", sans-serif;
+}
+#start .fixhead {
+  background-color: #194277;
+}
+#start .fixhead__box {
+  max-width: 1170px;
+  height: 71px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#start .fixhead__box p {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 50px;
+}
+#start .fixhead__box button {
+  width: 112px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #194277;
+}
+#start .block__header {
+  background: url(../img/bg_header.png) center/cover;
+  height: 800px;
+  color: #fff;
+  width: 100%;
+}
+#start .block__header .header {
+  max-width: 1170px;
+}
+#start .block__header .header .burger-menu .header__burger {
+  display: block;
+  position: relative;
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  color: #3677fd;
+  margin-left: 15px;
+  height: 75px;
+  text-align: center;
+}
+#start .block__header .header .burger-menu .header__burger #check-menu {
+  display: none;
+}
+#start .block__header .header .burger-menu .header__burger label {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45px;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+  line-height: 40px;
+}
+#start .block__header .header .burger-menu .header__burger .burger-line {
+  position: absolute;
+  top: 38%;
+  right: 10px;
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.5s all;
+}
+#start .block__header .header .burger-menu .header__burger .second, #start .block__header .header .burger-menu .header__burger .third {
+  top: 50%;
+}
+#start .block__header .header .burger-menu .header__burger .fourth {
+  top: 62%;
+}
+#start .block__header .header .burger-menu .header__burger .main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: 0.5s all;
+  background-color: rgba(255, 255, 255, 0.92);
+}
+#start .block__header .header .burger-menu .header__burger .menu__link {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  color: #3677fd;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+#start .block__header .header .burger-menu .header__burger a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#start .block__header .header .burger-menu .header__burger #check-menu:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+#start .block__header .header .burger-menu .header__burger #check-menu:checked ~ .first {
+  display: none;
+}
+#start .block__header .header .burger-menu .header__burger #check-menu:checked ~ .second {
+  transform: rotate(45deg);
+}
+#start .block__header .header .burger-menu .header__burger #check-menu:checked ~ .third {
+  transform: rotate(-45deg);
+}
+#start .block__header .header .burger-menu .header__burger #check-menu:checked ~ .fourth {
+  display: none;
+}
+#start .block__header .header__logo {
+  text-align: center;
+  margin-bottom: 57px;
+}
+#start .block__header .header__title {
+  font-weight: 900;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+}
+#start .block__header .header__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+#start .block__header .header__btn {
+  background-color: #fff;
+  color: #3695ff;
+  font-weight: bold;
+  font-size: 16px;
+  width: 206px;
+  height: 56px;
+  border-radius: 30px;
+  margin: 0 auto;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
