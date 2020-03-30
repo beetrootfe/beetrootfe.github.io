@@ -2,7 +2,6 @@
 /* ================================================
      BASE AND CSS RESET
    ================================================ */
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
 *,
 *::before,
 *::after {
@@ -82,12 +81,28 @@ body {
 }
 #latest-works .box_latest-1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 54px;
 }
-#latest-works .box_latest-2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+#latest-works .box_latest-1 .works_padtop {
+  padding-bottom: 53px;
+}
+@media screen and (max-width: 751px) {
+  #latest-works .box_latest-1 .works_padtop_1 {
+    padding-top: 53px;
+  }
+}
+@media screen and (max-width: 1114px) {
+  #latest-works .box_latest-1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1112px) {
+  #latest-works .box_latest-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
