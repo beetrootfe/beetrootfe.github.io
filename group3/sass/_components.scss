@@ -1,0 +1,19 @@
+/* ================================================
+     TYPOGRAPHY
+   ================================================ */
+
+%heading {
+    font-family: $font-primary;
+    font-weight: 300;
+}
+
+.heading-1 {
+    @extend %heading;
+    font-size: 5rem;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
