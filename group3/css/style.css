@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+/* ================================================
+     BASE AND CSS RESET
+   ================================================ */
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+::selection {
+  background-color: #3677fd;
+  color: #fff;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #5a5a5a;
+  font-weight: 400;
+}
+
+/* ================================================
+     TYPOGRAPHY
+   ================================================ */
+.heading-1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
+
+.heading-1 {
+  font-size: 5rem;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-me .h2_about {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 0.7;
+  text-align: center;
+  color: #3677fd;
+  padding-bottom: 69px;
+  padding-top: 98px;
+}
+#about-me p.p_about {
+  text-align: center;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 2.19;
+  padding-bottom: 115px;
+}
+
+#latest-works {
+  padding-bottom: 191px;
+}
+#latest-works h2.h2_latest {
+  font-size: 50px;
+  font-weight: 300;
+  color: #3677fd;
+  text-align: center;
+  padding-bottom: 104px;
+  padding-top: 91px;
+}
+#latest-works .box_latest-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 54px;
+}
+#latest-works .box_latest-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

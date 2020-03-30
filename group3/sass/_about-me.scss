@@ -1,0 +1,21 @@
+#about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .h2_about {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 0.7;
+        text-align: center;
+        color: #3677fd;
+        padding-bottom: 69px;
+        padding-top: 98px;
+    }
+    p.p_about {
+        text-align: center;
+        font-size: 16px;
+        color: #5a5a5a;
+        line-height: 2.19;
+        padding-bottom: 115px;
+    }
+}
