@@ -79,9 +79,10 @@ margin-bottom: 101px;
     opacity: .5;
   }
   
-  .popup-content {
-    width: 812px;
-height: 623px;
+  #popupCheckboxOne~.popup .popup-content {
+    width: 100%;
+    max-width: 812px;
+    height: 623px;
     border-radius: 10px;
     background-color: #ffffff;
     position: absolute;
@@ -90,15 +91,14 @@ height: 623px;
     left: 23%;
     margin: auto;
     color: #3677fd;
-font-family: "Myriad Pro";
-font-size: 50px;
+    font-family: "Myriad Pro";
+    font-size: 50px;
     border: 1px solid #ddd;
     text-align: center;
     padding-top: 20px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
- 
   
   .popup-checkbox:checked + .popup {
     opacity: 1;
@@ -124,28 +124,28 @@ font-size: 50px;
     font-size: 54px;
     display: block;
     width: 21px;
-height: 21px;
+    height: 21px;
     line-height: 20px;
     text-align: center;
     cursor: pointer;
   }
  
  
-  .data{
-      
-    width: 517px;
-height: 45px;
-padding-left: 20px;
-border-radius: 10px;
-border: 1px solid #b7c0c9;
-background-color: #ffffff;
+   #popupCheckboxOne~.popup .popup-content .formei .data {
+    display: block;
+    max-width: 517px;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #b7c0c9;
+    background-color: #ffffff;
     opacity: 0.5;
     color: #5a5a5a;
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
-  margin-bottom: 20px;
- 
+    margin: 0 auto 16px;
   }
 
   .message{
@@ -164,7 +164,7 @@ background-color: #ffffff;
         line-height: 35px;
         
   }
-  ::-webkit-input-placeholder {  padding: 16px 420px 0px 0px;}
+  ::-webkit-input-placeholder {  padding: 16px 370px 0px 0px;}
   .send{
       
     width: 204px;
