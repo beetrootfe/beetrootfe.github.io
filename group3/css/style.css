@@ -56,9 +56,12 @@ body {
   font-weight: 300;
   line-height: 0.7;
   text-align: center;
-  color: #3677fd;
   padding-bottom: 69px;
   padding-top: 98px;
+  background-image: linear-gradient(to right, #3695ff, #3564fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 #about-me p.p_about {
   text-align: center;
@@ -74,10 +77,13 @@ body {
 #latest-works h2.h2_latest {
   font-size: 50px;
   font-weight: 300;
-  color: #3677fd;
   text-align: center;
   padding-bottom: 104px;
   padding-top: 91px;
+  background-image: linear-gradient(to right, #3695ff, #3564fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 #latest-works .box_latest-1 {
   display: flex;
@@ -85,6 +91,11 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 54px;
+}
+#latest-works .box_latest-1 .works:hover {
+  opacity: 0.4;
+  transform: scale(1.05);
+  transition-duration: 1s;
 }
 #latest-works .box_latest-1 .works_padtop {
   padding-bottom: 53px;
