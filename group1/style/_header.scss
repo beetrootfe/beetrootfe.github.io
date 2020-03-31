@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
+@mixin text_1 {
+    font-family: "Lato", sans-serif;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 1.25px;
+    text-align: center;
+    color: #ffffff;
+}
+@mixin flex_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+.cookies {
+    @include flex_row();
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 72px;
+    background-color: #194277;
+    z-index: 2;
+    @media only screen and (max-width: 370px) {
+        padding: 0px 20px;
+    }
+
+    & p {
+        font-size: 14px;
+        color: white;
+        padding-right: 30px;
+        @media only screen and (max-width: 370px) {
+            padding: 0px 0px;
+            max-width: 40%;
+        }
+    }
+    & button {
+        &.accept {
+            @include flex_column();
+            @include text_1();
+            width: 109px;
+            height: 30px;
+            text-decoration: none;
+            text-transform: capitalize;
+            border-radius: 13px;
+            background-color: #ffffff;
+            font-size: 12px;
+            font-weight: bold;
+            color: #3695ff;
+            @media only screen and (max-width: 370px) {
+                width: auto;
+            }
+        }
+    }
+}
+
+header {
+    @include flex_column();
+    font-size: 0px;
+    background: url(/group1/img/Prostokąt.png);
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    & .context {
+        position: relative;
+        @include flex_column();
+        max-width: 1150px;
+        padding-top: 175px;
+        padding-bottom: 148px;
+        & .icon-arrow-thin-down:before {
+            content: "\e900";
+            font-size: 30px;
+            font-weight: 100;
+            position: absolute;
+            bottom: 10px;
+            transform: translate(-50%, -50%);
+            color: rgba($color: #ffffff, $alpha: 0.2);
+        }
+        & .circle {
+            width: 181px;
+            height: 181px;
+            border-radius: 50%;
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .c1 {
+                width: 160px;
+                height: 160px;
+                background-color: rgba($color: #ffffff, $alpha: 0.3);
+                & .c2 {
+                    width: 141px;
+                    height: 141px;
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                }
+            }
+        }
+        & h1 {
+            &.title {
+                @include text_1();
+                text-transform: uppercase;
+
+                font-size: 50px;
+                font-weight: 900;
+
+                @media only screen and (max-width: 570px) {
+                    font-size: 30px;
+                }
+            }
+        }
+        & .subtitle {
+            @include text_1();
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 2.19;
+            padding-bottom: 40px;
+        }
+        & .hire_button {
+            @include text_1();
+            @include flex_column();
+            width: 204px;
+            height: 55px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 27.5px;
+            background-color: #ffffff;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            color: #3695ff;
+        }
+        .menu {
+            color: white;
+            position: absolute;
+            right: 20px;
+            top: 8%;
+
+            .overlay {
+                height: 0%;
+                width: 100%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.9);
+                overflow-y: hidden;
+                transition: 0.5s;
+                @include flex_column();
+            }
+
+            .overlay-content {
+                border-radius: 15px;
+                max-width: 1150px;
+                padding-top: 3%;
+                width: 100%;
+                background-color: white;
+                position: relative;
+                text-align: center;
+
+                margin-top: 30px;
+                & .social_media {
+                    border-top: 2px solid rgb(160, 160, 167);
+                    margin: 0 auto;
+                    width: 20%;
+                    padding: 5%;
+                    @media only screen and (max-width: 570px) {
+                        @include flex_row();
+                        flex-wrap: nowrap;
+                    }
+                    @media only screen and (max-width: 1000px) {
+                        @include flex_row();
+                        flex-wrap: nowrap;
+                    }
+
+                    & .sm {
+                        border-radius: 50%;
+                        display: inline;
+                        background-color: rgb(160, 160, 167);
+                        padding: 10px;
+                        margin: 5px;
+                        font-size: 20px;
+
+                        & .icon-facebook:before {
+                            content: "\ea90";
+                        }
+                        & .icon-instagram:before {
+                            content: "\ea92";
+                        }
+                        & .icon-whatsapp:before {
+                            content: "\ea93";
+                        }
+                        & .icon-twitter:before {
+                            content: "\ea96";
+                        }
+                        &:hover {
+                            background-color: #3695ff;
+                        }
+                    }
+                }
+            }
+            .overlay a.lang {
+                @include flex_row();
+                color: rgb(160, 160, 167);
+                font-size: 16px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                @media only screen and (max-width: 570px) {
+                    position: relative;
+                }
+                & img {
+                    width: 45px;
+                    height: 25px;
+                }
+            }
+
+            .overlay a {
+                @include text_1();
+                padding: 18px;
+                text-decoration: none;
+                text-transform: capitalize;
+                font-size: 36px;
+                color: #d2d2d2;
+                display: block;
+                transition: 0.3s;
+                font-weight: 100;
+            }
+
+            .overlay a:hover,
+            .overlay a:focus {
+                color: #3677fd;
+            }
+
+            .overlay .closebtn {
+                position: absolute;
+                top: 0px;
+                right: 5px;
+                font-size: 60px;
+            }
+            @media screen and (max-height: 450px) {
+                .overlay {
+                    overflow-y: auto;
+                }
+                .overlay a {
+                    font-size: 20px;
+                }
+                .overlay .closebtn {
+                    font-size: 40px;
+                    top: 15px;
+                    right: 35px;
+                }
+            }
+        }
+    }
+}
