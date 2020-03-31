@@ -1,15 +1,13 @@
-//   FONTS
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
 // ==================================================
 
-$font-primary: 'Lato', sans-serif;
-
+$font-primary: "Lato", sans-serif;
 
 //   COLORS
 // ==================================================
 
 $color-primary: #3677fd;
 $color-grey: #5a5a5a;
-
 
 /* ================================================
      BASE AND CSS RESET
@@ -18,24 +16,24 @@ $color-grey: #5a5a5a;
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  box-sizing: inherit;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
 }
 
 ::selection {
-    background-color: $color-primary;
-    color: #fff;
+  background-color: $color-primary;
+  color: #fff;
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-grey;
-    font-weight: 400;
+  font-family: $font-primary;
+  color: $color-grey;
+  font-weight: 400;
 }
