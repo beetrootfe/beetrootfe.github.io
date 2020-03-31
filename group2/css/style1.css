@@ -34,7 +34,7 @@ height: 370px;
   position: relative;
   width:100%;
   background-color: #f1f8ff;
-  height: 330px;
+  height: 500px;
 }
 .clients_heading1 {
 position: absolute;
@@ -50,25 +50,31 @@ line-height: 35.12px;
 }
 
 .stickers {
-  width: 1043px;
-  left: 14%;
+  left: 13%;
+  flex-wrap: wrap;
   margin: 0 auto;
+  /* padding: 0 95px; */
   position: absolute;
   display: flex;
+  flex-flow: row wrap;
+
   align-items: center;
   top: 80px;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 100px;
 }
+.sticker{
+  padding: 20px 40px;
+}
 
-.stick_1 {
+/* .stick_1 {
   margin-right: 92px;
 }
 
 .stick_3 {
   margin-right: 92px;
   margin-left: 92px;
-}
+} */
 
 .footer {
   width:100%;
@@ -109,3 +115,4 @@ line-height: 35.12px;
   line-height: 30px;
   text-transform: uppercase;
 }
+
