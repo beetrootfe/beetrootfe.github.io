@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
 @mixin text_1 {
-    font-family: "Lato", sans-serif;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
@@ -72,7 +69,7 @@ body {
 header {
     @include flex_column();
     font-size: 0px;
-    background: url(/group1/img/Prostokąt.png);
+    background-image: url(../img/header-background.png), linear-gradient(to top, #3695ff, #3564fc);
     position: relative;
     width: 100%;
     margin: 0;
@@ -121,7 +118,7 @@ header {
             &.title {
                 @include text_1();
                 text-transform: uppercase;
-
+                padding: 20px;
                 font-size: 50px;
                 font-weight: 900;
 
@@ -135,28 +132,31 @@ header {
             font-size: 16px;
             font-weight: 300;
             line-height: 2.19;
-            padding-bottom: 40px;
+            padding: 10px 10px 40px;
         }
         & .hire_button {
-            @include text_1();
-            @include flex_column();
-            width: 204px;
-            height: 55px;
-            text-decoration: none;
-            text-transform: uppercase;
-            border-radius: 27.5px;
-            background-color: #ffffff;
-
             font-size: 16px;
             font-weight: bold;
-
+            text-transform: uppercase;
+            text-decoration: none;
             color: #3695ff;
+            border: 1px solid #fff;
+            border-radius: 27.5px;
+            background-color: #fff;
+            padding: 20px 70px;
+            margin: 20px;
+    
+            &:hover {
+                cursor: pointer;
+                background-color: transparent;
+                color: #fff;
+            }
         }
         .menu {
             color: white;
             position: absolute;
             right: 20px;
-            top: 8%;
+            top: 12%;
 
             .overlay {
                 height: 0%;
@@ -186,13 +186,13 @@ header {
                 & .social_media {
                     border-top: 2px solid rgb(160, 160, 167);
                     margin: 0 auto;
-                    width: 20%;
-                    padding: 5%;
+                    width: 25%;
+                    padding: 3%;
                     @media only screen and (max-width: 570px) {
                         @include flex_row();
                         flex-wrap: nowrap;
                     }
-                    @media only screen and (max-width: 1000px) {
+                    @media only screen and (max-width: 1200px) {
                         @include flex_row();
                         flex-wrap: nowrap;
                     }

@@ -1,7 +1,12 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Lato:300,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:300&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -42,7 +47,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-family: "Lato", sans-serif;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -72,7 +76,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 0px;
-  background: url(/group1/img/Prostokąt.png);
+  background-image: url(../img/header-background.png), linear-gradient(to top, #3695ff, #3564fc);
   position: relative;
   width: 100%;
   margin: 0;
@@ -122,7 +126,6 @@ header .context .circle .c1 .c2 {
   border-radius: 50%;
 }
 header .context h1.title {
-  font-family: "Lato", sans-serif;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -130,6 +133,7 @@ header .context h1.title {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 20px;
   font-size: 50px;
   font-weight: 900;
 }
@@ -139,7 +143,6 @@ header .context h1.title {
   }
 }
 header .context .subtitle {
-  font-family: "Lato", sans-serif;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -149,36 +152,30 @@ header .context .subtitle {
   font-size: 16px;
   font-weight: 300;
   line-height: 2.19;
-  padding-bottom: 40px;
+  padding: 10px 10px 40px;
 }
 header .context .hire_button {
-  font-family: "Lato", sans-serif;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: 1.25px;
-  text-align: center;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 204px;
-  height: 55px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 27.5px;
-  background-color: #ffffff;
   font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #3695ff;
+  border: 1px solid #fff;
+  border-radius: 27.5px;
+  background-color: #fff;
+  padding: 20px 70px;
+  margin: 20px;
+}
+header .context .hire_button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
 }
 header .context .menu {
   color: white;
   position: absolute;
   right: 20px;
-  top: 8%;
+  top: 12%;
 }
 header .context .menu .overlay {
   height: 0%;
@@ -211,8 +208,8 @@ header .context .menu .overlay-content {
 header .context .menu .overlay-content .social_media {
   border-top: 2px solid #a0a0a7;
   margin: 0 auto;
-  width: 20%;
-  padding: 5%;
+  width: 25%;
+  padding: 3%;
 }
 @media only screen and (max-width: 570px) {
   header .context .menu .overlay-content .social_media {
@@ -224,7 +221,7 @@ header .context .menu .overlay-content .social_media {
     flex-wrap: nowrap;
   }
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   header .context .menu .overlay-content .social_media {
     display: flex;
     flex-direction: row;
@@ -279,7 +276,6 @@ header .context .menu .overlay a.lang img {
   height: 25px;
 }
 header .context .menu .overlay a {
-  font-family: "Lato", sans-serif;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -319,16 +315,6 @@ header .context .menu .overlay .closebtn {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  box-sizing: border-box;
-}
-
-#About-me {
-  font-family: "Lato", sans-serif;
-}
 #About-me .about-me {
   padding: 20px;
   max-width: 1140px;
@@ -340,6 +326,7 @@ header .context .menu .overlay .closebtn {
   text-align: center;
   padding-top: 100px;
   font-size: 50px;
+  font-weight: 300;
   color: #3695ff;
 }
 @media screen and (max-width: 901px) {
@@ -375,6 +362,7 @@ header .context .menu .overlay .closebtn {
 }
 #About-me .Container2 {
   background-color: #f1f8ff;
+  padding-bottom: 100px;
 }
 #About-me .Expert-in {
   max-width: 1140px;
@@ -382,8 +370,9 @@ header .context .menu .overlay .closebtn {
 }
 #About-me .Expert-in .Expert-in__title {
   text-align: center;
-  padding-top: 101px;
+  padding-top: 100px;
   font-size: 50px;
+  font-weight: 300;
   color: #3695ff;
 }
 #About-me .Expert-in .Expert-in__box1 {
@@ -477,5 +466,225 @@ header .context .menu .overlay .closebtn {
 @media screen and (max-width: 321px) {
   #About-me .Expert-in .box1__text {
     font-size: 13px;
+  }
+}
+
+.works {
+  background-color: #fff;
+  text-align: center;
+  padding: 94px 20px 194px;
+}
+.works h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #3677fd;
+  margin-bottom: 94px;
+}
+@media screen and (max-width: 400px) {
+  .works h2 {
+    font-size: 35px;
+  }
+}
+.works__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.works__box {
+  margin: 15px;
+  transition: 0.5s;
+}
+.works__box:hover {
+  transition: 0.5s;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .works__box img {
+    width: 100%;
+  }
+}
+
+.clients {
+  background-color: #f1f8ff;
+  text-align: center;
+  padding: 94px 20px 94px;
+}
+.clients h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: #3677fd;
+  margin-bottom: 94px;
+}
+@media screen and (max-width: 400px) {
+  .clients h2 {
+    font-size: 35px;
+  }
+}
+.clients__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1200px) {
+  .clients__box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .clients__box {
+    width: 100%;
+  }
+}
+.clients__box img {
+  filter: grayscale(100%);
+  opacity: 0.3;
+  margin: 30px;
+}
+
+footer {
+  background-image: url(../img/footer-background.png), linear-gradient(to top, #3695ff, #3564fc);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 94px 20px;
+}
+footer .footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .footer h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+footer .footer h2 span {
+  font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+  footer .footer h2 {
+    font-size: 35px;
+  }
+}
+footer .footer button {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #3695ff;
+  border: 1px solid #fff;
+  border-radius: 27.5px;
+  background-color: #fff;
+  padding: 20px 70px;
+  margin: 20px;
+}
+footer .footer button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+}
+footer .overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+footer .hire-me {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+}
+@media screen and (max-height: 800px) {
+  footer .hire-me {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    border-radius: 0;
+  }
+}
+footer .hire-me .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 40px;
+  font-weight: 300;
+}
+footer .hire-me a {
+  padding: 10px;
+  text-decoration: none;
+  color: #3677fd;
+}
+footer .hire-me h2 {
+  font-size: 50px;
+  font-weight: normal;
+  color: #3677fd;
+  padding: 50px 20px 35px;
+}
+@media screen and (max-width: 400px) {
+  footer .hire-me h2 {
+    font-size: 35px;
+  }
+}
+footer .hire-me input, footer .hire-me textarea {
+  font-size: 16px;
+  color: #8d959c;
+  width: 70%;
+  border-radius: 10px;
+  border: solid 1px #b7c0c9;
+  padding: 15px 20px;
+  margin: 10px;
+}
+footer .hire-me input:focus, footer .hire-me textarea:focus {
+  outline: none;
+  border-color: #3677fd;
+}
+@media screen and (max-width: 400px) {
+  footer .hire-me input, footer .hire-me textarea {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+footer .hire-me .submit-btn {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 204px;
+  height: 55px;
+  border: 1px solid #3695ff;
+  border-radius: 27.5px;
+  background-image: linear-gradient(to top, #3695ff, #3564fc);
+  margin: 35px 20px 50px;
+}
+footer .hire-me .submit-btn:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: transparent;
+  color: #3695ff;
+}
+@media screen and (max-width: 400px) {
+  footer .hire-me .submit-btn {
+    font-size: 14px;
+    margin: 15px 20px 50px;
   }
 }
