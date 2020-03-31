@@ -3,10 +3,13 @@
     h2.h2_latest {
         font-size: 50px;
         font-weight: 300;
-        color: #3677fd;
         text-align: center;
         padding-bottom: 104px;
         padding-top: 91px;
+        background-image: linear-gradient(to right, #3695ff, #3564fc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     .box_latest-1 {
         display: flex;
@@ -14,6 +17,11 @@
         justify-content: space-between;
         flex-direction: row;
         padding-bottom: 54px;
+        .works:hover {
+            opacity: 0.4;
+            transform: scale(1.05);
+            transition-duration: 1s;
+        }
         .works_padtop {
             padding-bottom: 53px;
         }

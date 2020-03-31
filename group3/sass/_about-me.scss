@@ -7,9 +7,12 @@
         font-weight: 300;
         line-height: 0.7;
         text-align: center;
-        color: #3677fd;
         padding-bottom: 69px;
         padding-top: 98px;
+        background-image: linear-gradient(to right, #3695ff, #3564fc);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
     p.p_about {
         text-align: center;
