@@ -51,3 +51,139 @@ margin-bottom: 101px;
 .first{
     margin-left: 110px;
 }
+.popup-checkbox, .popup {
+    display: none;
+  }
+  
+  .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+   
+  }
+  
+  .popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .popup-content {
+    width: 812px;
+height: 623px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    left: 23%;
+    margin: auto;
+    color: #3677fd;
+font-family: "Myriad Pro";
+font-size: 50px;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-top: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+ 
+  
+  .popup-checkbox:checked + .popup {
+    opacity: 1;
+    display: block;
+  }
+  
+  .popup-shower {
+    color: #00f;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .popup-shower:hover {
+   
+    text-decoration: underline;
+  }
+  
+  .popup-closer {
+    position: absolute;
+    top: -9px;
+    right: 27px;
+    color: #4690fe;
+    font-size: 54px;
+    display: block;
+    width: 21px;
+height: 21px;
+    line-height: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+ 
+ 
+  .data{
+      
+    width: 517px;
+height: 45px;
+padding-left: 20px;
+border-radius: 10px;
+border: 1px solid #b7c0c9;
+background-color: #ffffff;
+    opacity: 0.5;
+    color: #5a5a5a;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+  margin-bottom: 20px;
+ 
+  }
+
+  .message{
+    
+    padding-left: 20px;
+    width: 517px;
+    height: 180px;
+    border-radius: 10px;
+    border: 1px solid #b7c0c9;
+    background-color: #ffffff;
+        opacity: 0.5;
+        color: #5a5a5a;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        
+  }
+  ::-webkit-input-placeholder {  padding: 16px 420px 0px 0px;}
+  .send{
+      
+    width: 204px;
+height: 55px;
+border-radius: 28px;
+ 
+background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+  text-align: center;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+   border: none;
+    letter-spacing: 0.4px;
+  }
+  .send:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+  }
+   
