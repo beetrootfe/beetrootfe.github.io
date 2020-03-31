@@ -1,0 +1,149 @@
+footer {
+    background-image: url(../img/footer-background.png), linear-gradient(to top, #3695ff, #3564fc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 94px 20px;
+
+    .footer {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        h2 {
+            font-size: 50px;
+            font-weight: 300;
+            color: white;
+            margin: 20px;
+            text-align: center;
+    
+            span {
+                font-weight: bold;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 35px;
+            }
+        }
+
+        button {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #3695ff;
+            border: 1px solid #fff;
+            border-radius: 27.5px;
+            background-color: #fff;
+            padding: 20px 70px;
+            margin: 20px;
+    
+            &:hover {
+                cursor: pointer;
+                background-color: transparent;
+                color: #fff;
+            }
+        }
+    }
+
+    .overlay {   
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgba(0,0,0, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .hire-me {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+
+        @media screen and (max-height: 800px) {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            overflow: hidden;
+            border-radius: 0;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 15px;
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        a {
+            padding: 10px;
+            text-decoration: none;
+            color: #3677fd;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: normal;
+            color: #3677fd;
+            padding: 50px 20px 35px;
+
+            @media screen and (max-width: 400px) {
+                font-size: 35px;
+            }
+        }
+        
+        input, textarea {
+            font-size: 16px;
+            color: #8d959c;
+            width: 70%;
+            border-radius: 10px;
+            border: solid 1px #b7c0c9;
+            padding: 15px 20px;
+            margin: 10px;
+
+            &:focus {
+                outline: none;
+                border-color: #3677fd;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+        .submit-btn {
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            width: 204px;
+            height: 55px;
+            border: 1px solid #3695ff;
+            border-radius: 27.5px;
+            background-image: linear-gradient(to top, #3695ff, #3564fc);
+            margin: 35px 20px 50px;
+
+            &:hover {
+                cursor: pointer;
+                background-image: none;
+                background-color: transparent;
+                color: #3695ff;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
+                margin: 15px 20px 50px;
+            }
+        }
+    }
+}
