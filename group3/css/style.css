@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+
 /* ================================================
      BASE AND CSS RESET
    ================================================ */
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -159,5 +160,76 @@ body {
     border-width: 2px;
     border-radius: 50%;
     margin-bottom: 20px;
+
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-me .h2_about {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 0.7;
+  text-align: center;
+  padding-bottom: 69px;
+  padding-top: 98px;
+  background-image: linear-gradient(to right, #3695ff, #3564fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#about-me p.p_about {
+  text-align: center;
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 2.19;
+  padding-bottom: 115px;
+}
+
+#latest-works {
+  padding-bottom: 191px;
+}
+#latest-works h2.h2_latest {
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 104px;
+  padding-top: 91px;
+  background-image: linear-gradient(to right, #3695ff, #3564fc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#latest-works .box_latest-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 54px;
+}
+#latest-works .box_latest-1 .works:hover {
+  opacity: 0.4;
+  transform: scale(1.05);
+  transition-duration: 1s;
+}
+#latest-works .box_latest-1 .works_padtop {
+  padding-bottom: 53px;
+}
+@media screen and (max-width: 751px) {
+  #latest-works .box_latest-1 .works_padtop_1 {
+    padding-top: 53px;
+  }
+}
+@media screen and (max-width: 1114px) {
+  #latest-works .box_latest-1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1112px) {
+  #latest-works .box_latest-1 {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
