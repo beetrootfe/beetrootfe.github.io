@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap");
+
+/* ================================================
+     TYPOGRAPHY
+   ================================================ */
+
+%heading {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 5rem;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
