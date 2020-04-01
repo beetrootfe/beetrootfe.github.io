@@ -14,17 +14,26 @@
     <link rel="stylesheet" href="./lesson1/block3.css">
     <link rel="stylesheet" href="./lesson1/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,600,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
+    <script>
+        $(document).ready(function(){
+    $("#remove").click(function(){
+      $("#remove_div").remove();
+    });
+  });
+    </script>
     <div id="start">
-        <div class="fixhead">
+        <div class="fixhead" id="remove_div">
             <div class="fixhead__box">
                 <p>This site uses cookies, so that my service can work better.</p>
-                <button>Accept</button>
+                <div class="but_1">
+                <button id="remove">Accept</button></div>
             </div>
         </div>
         <div class="block__header">
