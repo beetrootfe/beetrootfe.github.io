@@ -18,7 +18,7 @@ html {
 }
 @media only screen and (max-width: 900px) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 
@@ -57,10 +57,20 @@ hr {
   line-height: 6rem;
   letter-spacing: 0.125rem;
 }
+@media only screen and (max-width: 900px) {
+  .heading-1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+}
 @media only screen and (max-width: 700px) {
   .heading-1 {
     font-size: 4rem;
-    line-height: 5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .heading-1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -131,12 +141,12 @@ hr {
   align-items: center;
   z-index: 20;
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 480px) {
   #header .top-line {
-    height: 8rem;
+    height: 8.5rem;
   }
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 480px) {
   #header .top-line .container {
     display: flex;
     flex-direction: column;
@@ -155,10 +165,22 @@ hr {
     margin-right: 3rem;
   }
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 480px) {
   #header .top-line__description {
     margin-right: 0;
     margin-bottom: 1.1rem;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+@media only screen and (max-width: 345px) {
+  #header .top-line__description {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (max-width: 308px) {
+  #header .top-line__description {
+    margin-bottom: 0.6rem;
   }
 }
 #header .top-line__btn-accept {
@@ -268,6 +290,11 @@ hr {
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 500px) {
+  #header .header__sub-title {
+    font-size: 1.5rem;
+  }
 }
 #header .header__btn-hire-me {
   border: none;
