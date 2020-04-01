@@ -232,7 +232,7 @@ hr {
 }
 #header .header__nav-icon, #header .header__nav-icon::before, #header .header__nav-icon::after {
   width: 2.5rem;
-  height: 0.2rem;
+  height: 2px;
   background-color: #fff;
 }
 #header .header__nav-icon::before, #header .header__nav-icon::after {
