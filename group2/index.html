@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,17 +14,26 @@
     <link rel="stylesheet" href="./lesson1/block3.css">
     <link rel="stylesheet" href="./lesson1/index.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,600,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style1.css">
 </head>
 
 <body>
+    <script>
+        $(document).ready(function(){
+    $("#remove").click(function(){
+      $("#remove_div").remove();
+    });
+  });
+    </script>
     <div id="start">
-        <div class="fixhead">
+        <div class="fixhead" id="remove_div">
             <div class="fixhead__box">
                 <p>This site uses cookies, so that my service can work better.</p>
-                <button>Accept</button>
+                <div class="but_1">
+                <button id="remove">Accept</button></div>
             </div>
         </div>
         <div class="block__header">
@@ -39,10 +48,10 @@
                         <div class="burger-line third"></div>
                         <div class="burger-line fourth"></div>
                         <nav class="main-menu">
-                            <a class="menu__link" href="">About Me</a>
-                            <a class="menu__link" href="#about_us">Service</a>
-                            <a class="menu__link" href="#our_services">My Works</a>
-                            <a class="menu__link" href="#gallery">Clients</a>
+                            <a class="menu__link" href="#about_me">About Me</a>
+                            <a class="menu__link" href="#expert-in">Service</a>
+                            <a class="menu__link" href="#latest-work">My Works</a>
+                            <a class="menu__link" href="#clients_1">Clients</a>
                             <hr>
                             <div class="social">
                                 <svg height="67px" id="facebook" style="enable-background:new 0 0 67 67;" version="1.1"
@@ -101,46 +110,48 @@
                     exercitation
                     ullamco</div>
 
-                    <div class="popup-wrapper">
-                        <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
-                        <div class="popup">
-                          <div class="popup-content">
+                <div class="popup-wrapper">
+                    <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+                    <div class="popup">
+                        <div class="popup-content">
                             <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
-                         <br>  <p>Hire Me</p>
-                       
-                         <form class="formei">
-                            <input name="name" class="data" placeholder="Your Name">
-                            <input type="email" name="name" class="data" placeholder="Your E-Mail">
-                         <input  type="text" class="message" name="message" placeholder="Your message">  
-                         </form>
-                       
-                         <button class="send">SEND MESSAGE</button>
-                          </div>
+
+                            <p>Hire Me</p>
+
+                            <form class="formei">
+                                <input name="name" class="data" placeholder="Your Name">
+                                <input type="email" name="name" class="data" placeholder="Your E-Mail">
+                                <textarea class="message YM" name="massage" placeholder="Your message"></textarea>
+                            </form>
+
+                            <button class="send">SEND MESSAGE</button>
                         </div>
-                      </div>
-                      
-                      <label for="popupCheckboxOne" class="header__btn">HIRE ME</label>
+                    </div>
+                </div>
+
+                <label for="popupCheckboxOne" class="header__btn">HIRE ME</label>
 
             </div>
         </div>
     </div>
-<!-- about me block -->
+
+    <!-- about me block -->
     <div class="block_about" id="about_me">
+
         <div class="info_1">
             <p class="about">About Me</p>
             <p class="info_2">Lorem ipsum dolor sit amet, consec
-                tetur adipisicing elit, sed do eiusmod tempor incididunt 
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                tetur adipisicing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit
                 esse cillum dolore eu fugiat nulla pariatur. Excepteur sint o
                 ccaecat cupidatat non proident, sunt in culpa qui officia </p>
         </div>
-
-
     </div>
-<!-- expert in -->
+    <!-- expert in -->
 
-    <div class="block2">
+    <div class="block2" id="expert-in">
 
         <p class="expert">Expert In</p>
         <div class="flex">
@@ -216,36 +227,59 @@
     </div>
 
     <!-- block clients -->
+
     <div class="clients" id="clients_1">
-<h3 class="clients_heading1">Clients</h3>
-<div class="stickers">
-    <div class="stick_1">
-   <svg>
-       <symbol id="microsoft">
+        <h3 class="clients_heading1">Clients</h3>
+        <div class="stickers">
+            <div class="sticker stick_1">
+                <img src="img/MSFT.svg" width="185px" height="45px" alt="">
+            </div>
+            <div class="sticker stick_2">
+                <img src="img/Samsung.svg" width="185px" height="30px" alt="">
+            </div>
+            <div class="sticker stick_2">
+                <img src="img/ibm.svg" width="175px" height="40px" alt="">
+            </div>
+            <div class="sticker stick_2">
+                <img src="img/Google.svg" width="160px" height="45px" alt="">
+            </div>
 
-       </symbol>
-   </svg>
+        </div>
     </div>
-    <div class="stick_2">
-<img src="img\Samsung-logo-2015-Nobg.png" alt="">
-    </div>
-    <div class="stick_3">
-<img src="img\ibm_logo.png" alt="">
-    </div>
-    <div class="stick_4">
-<img src="img\Google_2015_logo.svg.png" alt="">
-    </div>
-</div>
 
+
+    <!--  block footer -->
+    <div class="footer" id="footer_info">
+        <p class="footer_text">Need a graphic designer? <span class="bold_text">Ready to work! </span></p>
+      
+        <div class="popup-wrapper">
+            <input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+            <div class="popup">
+                <div class="popup-content">
+                    <label for="popupCheckboxOne" class="popup-closer">&#215;</label>
+
+                    <p>Hire Me</p>
+
+                    <form class="formei">
+                        <input name="name" class="data" placeholder="Your Name">
+                        <input type="email" name="name" class="data" placeholder="Your E-Mail">
+                        <textarea class="message YM" name="massage" placeholder="Your message"></textarea>
+                    </form>
+
+                    <button class="send">SEND MESSAGE</button>
+                </div>
+            </div>
+        </div>
+
+        <label for="popupCheckboxOne" class="hire">
+            <p class="text_button">hire me</p></label>
+
+      
+   
+
+
+        
     </div>
- 
-  <!--  block footer -->
-  <div class="footer" id="footer_info">
-      <p class="footer_text">Need a graphic designer? <span class="bold_text">Ready to work! </span></p>
-      <button class="hire">
-          <p class="text_button">hire me</p>
-      </button>
-  </div>
 
 </body>
 

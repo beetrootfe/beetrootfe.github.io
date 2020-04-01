@@ -6,8 +6,51 @@
 
 .block2{
     /* width: 2000px; */
+    width: 100%;
 height: 1145px;
 background-color: #f1f8ff;
+}
+@media screen  and (max-width: 1081px){
+    .block2{
+
+    height: 1645px;
+   
+    }
+}
+
+@media screen  and (max-width: 726px){
+    .block2{
+        height: 2985px;
+        }
+}
+@media screen  and (max-width: 400px){
+    .flex .text1{
+    
+    margin-top: 20px;
+    
+    font-size: 20px;
+    line-height: 14px;
+   
+    }
+    .flex .text2{
+        width: 255px;
+        
+    height: 85px;
+     text-align: center;
+    color: #5a5a5a;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 50px;
+    }
+    .flex .first{
+        margin-left: 60px;
+     
+    }
+    .block2{
+        height: 2255px;
+        }
 }
 .expert{
     width: 196px;
@@ -22,9 +65,11 @@ line-height: 35.12px;
 .flex{
     padding-top: 113px;
     display: flex;
-    width: 1136px;
+    width: 100%;
+    max-width: 1170px;
     height: 777px;
     flex-wrap: wrap;
+    
 
 }
 .text1{
@@ -50,6 +95,13 @@ margin-bottom: 101px;
 }
 .first{
     margin-left: 110px;
+ 
+}
+.first:hover{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    
 }
 .popup-checkbox, .popup {
     display: none;
@@ -79,26 +131,25 @@ margin-bottom: 101px;
     opacity: .5;
   }
   
-  .popup-content {
-    width: 812px;
-height: 623px;
+  #popupCheckboxOne~.popup .popup-content {
+    width: 100%;
+    max-width: 812px;
+    height: 620px;
     border-radius: 10px;
     background-color: #ffffff;
     position: absolute;
     z-index: 2;
     top: 90px;
-    left: 23%;
-    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     color: #3677fd;
-font-family: "Myriad Pro";
-font-size: 50px;
+    font-size: 50px;
     border: 1px solid #ddd;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 38px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
- 
   
   .popup-checkbox:checked + .popup {
     opacity: 1;
@@ -124,28 +175,30 @@ font-size: 50px;
     font-size: 54px;
     display: block;
     width: 21px;
-height: 21px;
+    height: 21px;
     line-height: 20px;
     text-align: center;
     cursor: pointer;
   }
  
- 
-  .data{
-      
-    width: 517px;
-height: 45px;
-padding-left: 20px;
-border-radius: 10px;
-border: 1px solid #b7c0c9;
-background-color: #ffffff;
+  #popupCheckboxOne~.popup .popup-content .formei{
+  margin-top: 42px;
+}
+   #popupCheckboxOne~.popup .popup-content .formei .data {
+    display: block;
+    max-width: 517px;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #b7c0c9;
+    background-color: #ffffff;
     opacity: 0.5;
-    color: #5a5a5a;
-    font-family: Lato;
-    font-size: 16px;
+    color: #0717b0;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
     font-weight: 400;
-  margin-bottom: 20px;
- 
+    margin: 0 auto 16px;
   }
 
   .message{
@@ -157,14 +210,16 @@ background-color: #ffffff;
     border: 1px solid #b7c0c9;
     background-color: #ffffff;
         opacity: 0.5;
-        color: #5a5a5a;
-        font-family: Lato;
-        font-size: 16px;
+        color: #0717b0;
+        font-family: "Lato", sans-serif;
+        font-size: 18px;
         font-weight: 400;
         line-height: 35px;
-        
   }
-  ::-webkit-input-placeholder {  padding: 16px 420px 0px 0px;}
+  .YM{
+    padding-top: 16px;
+  }
+  ::-webkit-input-placeholder {  padding: 0px 370px 0px 0px;}
   .send{
       
     width: 204px;
@@ -186,4 +241,7 @@ background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     font-size: 18px;
   }
-   
+   .header__btn:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+   }
