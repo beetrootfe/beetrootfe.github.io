@@ -47,7 +47,7 @@ height: 370px;
   position: relative;
   width:100%;
   background-color: #f1f8ff;
-  height: 500px;
+  height: 366px;
 }
 .clients_heading1 {
 position: absolute;
@@ -63,14 +63,14 @@ line-height: 35.12px;
 }
 
 .stickers {
-  left: 13%;
+  left: 50%;
+  transform: translateX(-50%);
   flex-wrap: wrap;
-  margin: 0 auto;
-  /* padding: 0 95px; */
   position: absolute;
   display: flex;
   flex-flow: row wrap;
-
+  width: 100%;
+  max-width: 1170px;
   align-items: center;
   top: 80px;
   justify-content: space-between;
@@ -78,6 +78,22 @@ line-height: 35.12px;
 }
 .sticker{
   padding: 20px 40px;
+}
+.sticker img{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+}
+.sticker img:hover{
+  -webkit-filter: none;
+  -moz-filter: none;
+  -ms-filter: none;
+  -o-filter: none;
+  filter: none;
+  filter: none; /* IE 6-9 */
 }
 
 .footer {
