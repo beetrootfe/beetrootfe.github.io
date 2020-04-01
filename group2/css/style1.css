@@ -4,8 +4,8 @@ height: 370px;
   background-color: #fff;
 }
 .block_about .info_1 {
-  max-width: 1067px;
-  width: 1067px;
+  max-width: 100%;
+  width: 100%;
   margin: auto;
 }
 .block_about .about {
@@ -21,6 +21,7 @@ height: 370px;
   line-height: 35.12px;
 }
 .block_about .info_2 {
+  width: 100%;
   text-align: center;
   margin-top: 60px;
   color: #5a5a5a;
