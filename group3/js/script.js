@@ -8,6 +8,15 @@ hireButton.addEventListener('click', () => {
   popupHire.style.opacity = "1";
 });
 
+// Відкриття Popup Hire Footer
+const hireButtonFooter = document.querySelector('.footer__btn-hire-me');
+hireButtonFooter.addEventListener('click', () => {
+  const popupHire = document.querySelector('.hire-popup');
+  // popupHire.style.display = "block";
+  popupHire.style.visibility = "visible";
+  popupHire.style.opacity = "1";
+});
+
 // Закриття Popup Hire
 const closeHire = document.querySelector('.hire-popup__close');
 closeHire.addEventListener('click', () => {
