@@ -66,8 +66,10 @@ line-height: 35.12px;
     padding-top: 113px;
     display: flex;
     width: 100%;
+    max-width: 1170px;
     height: 777px;
     flex-wrap: wrap;
+    
 
 }
 .text1{
@@ -132,20 +134,19 @@ margin-bottom: 101px;
   #popupCheckboxOne~.popup .popup-content {
     width: 100%;
     max-width: 812px;
-    height: 623px;
+    height: 620px;
     border-radius: 10px;
     background-color: #ffffff;
     position: absolute;
     z-index: 2;
     top: 90px;
-    left: 23%;
-    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
     color: #3677fd;
-    font-family: "Myriad Pro";
     font-size: 50px;
     border: 1px solid #ddd;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 38px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
@@ -180,7 +181,9 @@ margin-bottom: 101px;
     cursor: pointer;
   }
  
- 
+  #popupCheckboxOne~.popup .popup-content .formei{
+  margin-top: 42px;
+}
    #popupCheckboxOne~.popup .popup-content .formei .data {
     display: block;
     max-width: 517px;
@@ -212,9 +215,11 @@ margin-bottom: 101px;
         font-size: 16px;
         font-weight: 400;
         line-height: 35px;
-        
   }
-  ::-webkit-input-placeholder {  padding: 16px 370px 0px 0px;}
+  .YM{
+    padding-top: 16px;
+  }
+  ::-webkit-input-placeholder {  padding: 0px 370px 0px 0px;}
   .send{
       
     width: 204px;
