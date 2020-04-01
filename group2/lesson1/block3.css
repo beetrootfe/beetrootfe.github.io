@@ -1,0 +1,45 @@
+#latest-work {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  
+  .latest-works {
+    width: 100%;
+    /* max-width: 2000px; */
+  }
+  
+  .latest-work__body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  
+  .latest-work__images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width:1200px) {
+    .latest-work__images {
+      justify-content: center;
+    }
+
+    .latest-work__items {
+      margin: 5px;
+    }
+  }
+  .latest-work__items {
+    margin: 10px;
+  }
+  
+  .latest-work__text {
+    font-size: 50px;
+    color: #3677fd;
+    margin: 100px auto;
+    text-align: center;
+    font-weight: 300;
+  }
