@@ -55,7 +55,6 @@
         justify-content: center;
         align-items: center;
         border: solid 1px #b7c0c9;
-        background-color: #ffffff;
         width: 139px;
         height: 139px;
         border-style: solid;
@@ -63,10 +62,9 @@
         border-radius: 50%;
         margin-bottom: 50px;
         &.expert-in__block_img:hover {
-          transform: scale(1.04);
           transition-duration: 0, 6s;
           background-color: #c6cfd6;
-          border: 1px solid rgb(49, 48, 48);
+          border: solid 1px #b7c0c9;
         }
       }
     }
@@ -77,25 +75,16 @@
       justify-content: space-around;
     }
     .expert-in__block__box {
-      margin-bottom: 30px;
+      padding-bottom: 30px;
     }
     .expert-in__title {
-      font-size: 65px;
+      font-size: 60px;
       width: 270px;
     }
   }
   @media screen and (max-width: 742px) {
-    .expert-in__title {
-      font-size: 60px;
-      width: 350px;
-      margin-bottom: 90px;
-      margin-top: -20px;
-      font-weight: 400;
-    }
-
     .expert-in__block__box {
-      padding-top: 10px;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
   }
 }

@@ -644,7 +644,6 @@ hr {
   justify-content: center;
   align-items: center;
   border: solid 1px #b7c0c9;
-  background-color: #ffffff;
   width: 139px;
   height: 139px;
   border-style: solid;
@@ -653,34 +652,25 @@ hr {
   margin-bottom: 50px;
 }
 #expert-in .expert-in__block .expert-in__block__box .expert-in__block_img.expert-in__block_img:hover {
-  transform: scale(1.04);
   transition-duration: 0, 6s;
   background-color: #c6cfd6;
-  border: 1px solid #313030;
+  border: solid 1px #b7c0c9;
 }
 @media screen and (max-width: 1100px) {
   #expert-in .expert-in__block {
     justify-content: space-around;
   }
   #expert-in .expert-in__block__box {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
   #expert-in .expert-in__title {
-    font-size: 65px;
+    font-size: 60px;
     width: 270px;
   }
 }
 @media screen and (max-width: 742px) {
-  #expert-in .expert-in__title {
-    font-size: 60px;
-    width: 350px;
-    margin-bottom: 90px;
-    margin-top: -20px;
-    font-weight: 400;
-  }
   #expert-in .expert-in__block__box {
-    padding-top: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 }
 
