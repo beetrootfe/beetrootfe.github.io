@@ -133,8 +133,14 @@ line-height: 35.12px;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
+  padding-top: 10px;
 }
+.hire:hover{
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+cursor: pointer;
+ }
 
 @media (min-width: 320px) and  (max-width: 460px){
   .footer{
