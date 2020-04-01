@@ -149,13 +149,12 @@ line-height: 35.12px;
   }
   .clients{
     max-width: 460px;
+    height: 600px;
   }
   .clients_heading1{
     left: 30%;
   }
-  .stickers{
-    left: 0;
-  }
+  
   .hire{
     width: 100px;
     margin-left: -90px;
@@ -175,13 +174,12 @@ line-height: 35.12px;
   }
   .clients{
     max-width: 700px;
+    height: 600px;
   }
   .clients_heading1{
     left: 35%;
   }
-  .stickers{
-    left: 0;
-  }
+ 
   .hire{
     width: 150px;
     margin-left: -90px;
@@ -201,14 +199,13 @@ line-height: 35.12px;
   }
   .clients{
     max-width: 960px;
+    height: 400px;
   }
   .clients_heading1{
     left: 40%;
    
   }
-  .stickers{
-    left: 0;
-  }
+ 
   .hire{
     width: 200px;
     margin-left: -90px;
@@ -226,7 +223,7 @@ line-height: 35.12px;
   }
 
   .stickers{
-    left: 13%;
+   
     bottom: 40px;
   }
   .hire{
