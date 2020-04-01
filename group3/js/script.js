@@ -53,6 +53,7 @@ function closePopup() {
   const navPopup = document.querySelector('.nav-popup'); 
   navPopup.style.visibility = "hidden";
   navPopup.style.opacity = "0";
+  navPopup.style.transition = "all .2s ease-out";
 }
 
 // const navAbout = document.querySelector('.nav-about');
