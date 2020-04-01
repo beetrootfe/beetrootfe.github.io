@@ -722,7 +722,6 @@ hr {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 54px;
 }
 #latest-works .box_latest-1 .works:hover {
   opacity: 0.4;
