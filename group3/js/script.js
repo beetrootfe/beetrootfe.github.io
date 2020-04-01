@@ -46,3 +46,37 @@ btnAccept.addEventListener('click', () => {
   setTimeout(() => topLine.style.display = "flex", 2500);
 
 });
+
+
+
+function closePopup() {
+  const navPopup = document.querySelector('.nav-popup'); 
+  navPopup.style.visibility = "hidden";
+  navPopup.style.opacity = "0";
+}
+
+// const navAbout = document.querySelector('.nav-about');
+// navAbout.addEventListener('click', () => {
+
+//   const navPopup = document.querySelector('.nav-popup'); 
+//   navPopup.style.visibility = "hidden";
+//   navPopup.style.opacity = "0";
+  
+//   // closeHire.array.forEach(element => {
+      
+//   // });
+//   // console.log(closeMenuLink);
+
+// });
+
+const navAbout = document.querySelector('.nav-about');
+navAbout.addEventListener('click', closePopup);
+
+const navExpert = document.querySelector('.nav-expert');
+navExpert.addEventListener('click', closePopup);
+
+const navWorks = document.querySelector('.nav-works');
+navWorks.addEventListener('click', closePopup);
+
+const navFooter = document.querySelector('.nav-footer');
+navFooter.addEventListener('click', closePopup);
