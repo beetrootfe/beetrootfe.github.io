@@ -771,39 +771,39 @@ hr {
   align-items: center;
   padding: 0 0 100px;
 }
-#footer .clients_list {
+#footer .clients__block .clients_list {
   width: 193px;
   height: 53px;
   display: block;
 }
 @media screen and (max-width: 840px) {
-  #footer .clients_list {
+  #footer .clients__block .clients_list {
     width: 270px;
     height: 70px;
   }
 }
-#footer-one {
+#footer .clients__block-one {
   background: url(../img/Microsoft.png) center no-repeat;
 }
-#footer-one:hover {
+#footer .clients__block-one:hover {
   background: url(../img/MSFT_logo_png_color.png) center no-repeat;
 }
-#footer-two {
+#footer .clients__block-two {
   background: url(../img/samsung.png) center no-repeat;
 }
-#footer-two:hover {
+#footer .clients__block-two:hover {
   background: url(../img/Samsung-logo-2015-Nobg_color.png) center no-repeat;
 }
-#footer-tree {
+#footer .clients__block-tree {
   background: url(../img/ibm.png) center no-repeat;
 }
-#footer-tree:hover {
+#footer .clients__block-tree:hover {
   background: url(../img/ibm_logo_color.png) center no-repeat;
 }
-#footer-four {
+#footer .clients__block-four {
   background: url(../img/google.png) center no-repeat;
 }
-#footer-four:hover {
+#footer .clients__block-four:hover {
   background: url(../img/Google_2015_logo.svg_color.png) center no-repeat;
 }
 #footer .basis {
