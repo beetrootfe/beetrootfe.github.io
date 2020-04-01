@@ -2,7 +2,6 @@
 /* ================================================
      BASE AND CSS RESET
    ================================================ */
-
 *,
 *::before,
 *::after {
@@ -17,7 +16,6 @@ html {
   font-size: 62.5%;
   /* 1rem = 10px */
 }
-
 @media only screen and (max-width: 900px) {
   html {
     font-size: 56.25%;
@@ -722,7 +720,6 @@ hr {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: row;
-  padding-bottom: 54px;
 }
 #latest-works .box_latest-1 .works:hover {
   opacity: 0.4;
@@ -750,7 +747,6 @@ hr {
   }
 }
 
-
 #footer .clients__page {
   background-color: #f1f8ff;
 }
@@ -775,33 +771,39 @@ hr {
   align-items: center;
   padding: 0 0 100px;
 }
-#footer .clients__block .clients_list {
+#footer .clients_list {
   width: 193px;
   height: 53px;
   display: block;
 }
-#footer .clients__block-one {
+@media screen and (max-width: 840px) {
+  #footer .clients_list {
+    width: 270px;
+    height: 70px;
+  }
+}
+#footer-one {
   background: url(../img/Microsoft.png) center no-repeat;
 }
-#footer .clients__block-one:hover {
+#footer-one:hover {
   background: url(../img/MSFT_logo_png_color.png) center no-repeat;
 }
-#footer .clients__block-two {
+#footer-two {
   background: url(../img/samsung.png) center no-repeat;
 }
-#footer .clients__block-two:hover {
-  background: url(../img/MSFT_logo_png_color.png) center no-repeat;
+#footer-two:hover {
+  background: url(../img/Samsung-logo-2015-Nobg_color.png) center no-repeat;
 }
-#footer .clients__block-tree {
+#footer-tree {
   background: url(../img/ibm.png) center no-repeat;
 }
-#footer .clients__block-tree:hover {
+#footer-tree:hover {
   background: url(../img/ibm_logo_color.png) center no-repeat;
 }
-#footer .clients__block-four {
+#footer-four {
   background: url(../img/google.png) center no-repeat;
 }
-#footer .clients__block-four:hover {
+#footer-four:hover {
   background: url(../img/Google_2015_logo.svg_color.png) center no-repeat;
 }
 #footer .basis {
@@ -830,6 +832,11 @@ hr {
   color: #fff;
   line-height: 1.2;
 }
+@media screen and (max-width: 910px) {
+  #footer .light {
+    font-size: 20px;
+  }
+}
 #footer .bold {
   display: flex;
   color: #fff;
@@ -837,6 +844,11 @@ hr {
   font-size: 50px;
   font-weight: 700;
   line-height: 1.2;
+}
+@media screen and (max-width: 910px) {
+  #footer .bold {
+    font-size: 20px;
+  }
 }
 #footer .button {
   margin-left: 54px;
@@ -860,3 +872,4 @@ hr {
   background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
   transform: scale(1.09);
   box-shadow: 0 0 15px white;
+}
