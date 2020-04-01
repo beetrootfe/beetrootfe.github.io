@@ -231,7 +231,7 @@
         visibility: hidden;
         opacity: 0;
         @extend %popup-bg;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all .7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
         &__box {
             background-color: #fff;
