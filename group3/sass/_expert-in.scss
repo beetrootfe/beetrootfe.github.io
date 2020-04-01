@@ -1,9 +1,9 @@
 #expert-in {
   padding-top: 10em;
   padding-bottom: 11em;
+  background-color: #f1f8ff;
   .expert-in__title {
     margin: 0 auto;
-    margin-bottom: 113px;
     width: 207px;
     height: 45px;
     font-family: Lato;
@@ -18,21 +18,18 @@
     background-clip: text;
   }
   .expert-in__block {
-    height: 820px;
+    margin-top: 113px;
     display: flex;
     justify-content: space-between;
-    align-content: space-between;
     flex-wrap: wrap;
     .expert-in__block__box {
+      padding-bottom: 80px;
       flex-basis: 30%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      &.expert-in__block__box:hover {
-        transform: scale(1.05);
-        transition-duration: 0, 6s;
-      }
+
       .expert-in__block_text {
         font-size: 16px;
         font-family: $font-primary;
@@ -58,13 +55,17 @@
         justify-content: center;
         align-items: center;
         border: solid 1px #b7c0c9;
-        background-color: #ffffff;
         width: 139px;
         height: 139px;
         border-style: solid;
         border-width: 1px;
         border-radius: 50%;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+        &.expert-in__block_img:hover {
+          transition-duration: 0, 6s;
+          background-color: #c6cfd6;
+          border: solid 1px #b7c0c9;
+        }
       }
     }
   }
@@ -74,42 +75,16 @@
       justify-content: space-around;
     }
     .expert-in__block__box {
-      margin-bottom: 30px;
+      padding-bottom: 30px;
     }
     .expert-in__title {
-      font-size: 65px;
+      font-size: 60px;
       width: 270px;
     }
   }
   @media screen and (max-width: 742px) {
-    .expert-in__title {
-      font-size: 75px;
-      width: 350px;
-      margin-bottom: 90px;
-      margin-top: -30px;
-      font-weight: 700;
-    }
-    .expert-in__block_title {
-      margin-bottom: 5px;
-      font-size: 60px;
-      font-family: $font-primary;
-      font-weight: 500;
-    }
     .expert-in__block__box {
-      padding-top: 10px;
-      margin-bottom: 80px;
-      &.expert-in__block__box:hover {
-        transform: scale(1.05);
-        transition-duration: 0, 6s;
-        border: 1px solid rgb(128, 134, 141);
-      }
-    }
-    .expert-in__block_img {
-      width: 129px;
-      height: 129px;
-      border-width: 2px;
-      border-radius: 50%;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
   }
 }

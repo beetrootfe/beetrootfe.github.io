@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/a1b07cc1de/UntitledProject/style.css">
     <link rel="stylesheet" href="https://i.icomoon.io/public/temp/dcd6d39a01/UntitledProject/style.css">
-    <script src="/group1/js/meny.js"></script>
+    <script src="js/meny.js"></script>
     <title>Group 1</title>
 </head>
 
@@ -35,7 +35,7 @@
                 nisi ut
             </p>
 
-            <a class="hire_button" href="#hire">hire me</a>
+            <a class="hire_button" onclick="openPopup()" href="#hire">hire me</a>
             <div class="menu">
                 <div id="myNav" class="overlay">
 
@@ -53,7 +53,7 @@
                         </div>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="lang" href="">ENG
-                            <img src="/group1/img/2000px-Union_flag_1606_(Kings_Colors).svg.png" alt="">
+                            <img src="img/2000px-Union_flag_1606_(Kings_Colors).svg" alt="">
                         </a>
 
                     </div>
@@ -64,14 +64,10 @@
             <span class="icon-arrow-thin-down"></span>
         </div>
 
-
-
     </header>
 
     <section id="About-me">
         <div class="Container">
-
-
             <div class="about-me">
                 <h2 class="about-me__title">About Me</h2>
                 <p class="about-me__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -129,6 +125,79 @@
         </div>
 
     </section>
+
+    <section class="works">
+        <h2>Latest Works</h2>
+        <div class="works__container">
+            <div class="works__box">
+                <img src="img/works-box1.png">
+            </div>
+            <div class="works__box">
+                <img src="img/works-box2.png">
+            </div>
+            <div class="works__box">
+                <img src="img/works-box3.png">
+            </div>
+            <div class="works__box">
+                <img src="img/works-box4.png">
+            </div>
+            <div class="works__box">
+                <img src="img/works-box5.png">
+            </div>
+            <div class="works__box">
+                <img src="img/works-box6.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="clients">
+        <h2>Clients</h2>
+        <div class="clients__container">
+            <div class="clients__box">
+                <img src="img/clients-microsoft.png">
+            </div>
+            <div class="clients__box">
+                <img src="img/clients-samsung.png">
+            </div>
+            <div class="clients__box">
+                <img src="img/clients-ibm.png">
+            </div>
+            <div class="clients__box">
+                <img src="img/clients-google.png">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <h2 class="heading">Need a graphic designer? <span>Ready to work!</span></h2>
+            <button onclick="openPopup()">Hire me</button>
+        </div>
+
+        <div id="popup" class="overlay">
+            <div class="hire-me">
+                <a href="javascript:void(0)" class="close-btn" onclick="closePopup()">&times;</a>
+                <h2>Hire Me</h2>
+                <form action="/">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your E-mail">
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button class="submit-btn">send message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
 </body>
+
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+</script>
+
 
 </html>
